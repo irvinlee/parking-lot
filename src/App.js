@@ -1,10 +1,13 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Routes from './Routes';
+import { Layout } from './components';
 
 function App() {
-  //more App level code can be added here...
-  return <Routes />;
+  return (
+    <Layout>
+      <Routes />
+    </Layout>
+  );
 }
 
 export default App;
