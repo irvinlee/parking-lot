@@ -9,7 +9,10 @@ export default function Routes({ history }) {
     <Router history={history}>
       <Switch>
         <Route exact path="/" children={<Pages.Homepage />} />
-        <Route path="/dashboard/:slotCount" children={<Pages.Dashboard />} />
+        <Route
+          path="/dashboard/:slotCount(\d+)"
+          children={<Pages.Dashboard />}
+        />
         <Route path="/404" children={<Pages.NotFound />} />
         <Route path="*">
           <Redirect to="/404" />
