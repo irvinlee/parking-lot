@@ -1,0 +1,31 @@
+.dashboard-content-wrapper {
+  .top-section {
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slots-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+  }
+
+  .filters-section {
+    .filter-options {
+      display: flex;
+      margin-top: 1rem;
+
+      .filter-group {
+        width: 250px;
+        max-width: 45%;
+        margin-right: 1rem;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

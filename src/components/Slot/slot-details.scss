@@ -1,0 +1,37 @@
+.slot-details-modal {
+  .slot-details-wrapper {
+    padding: 2rem;
+    position: relative;
+
+    .slot-info {
+      > div {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+
+        .info-label {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .modal-body {
+    position: relative;
+    height: calc(100% - 4.2rem);
+
+    .button-row {
+      position: absolute;
+      bottom: 50px;
+      display: flex;
+      justify-content: center;
+      width: calc(100% - 2rem);
+      padding-right: 2rem;
+
+      button {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

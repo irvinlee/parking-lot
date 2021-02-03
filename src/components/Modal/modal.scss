@@ -1,0 +1,46 @@
+@import '../../vars.scss';
+
+.modal-overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  .custom-modal {
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+    height: 400px;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    max-width: 98%;
+
+    .custom-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 1rem;
+      background-color: $brand;
+      color: $header-text-color;
+
+      button {
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+    }
+
+    .modal-body {
+      padding: 2rem;
+    }
+  }
+}
