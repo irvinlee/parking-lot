@@ -3,11 +3,8 @@ import Routes from './Routes';
 import { Layout } from './components';
 
 function App() {
-  return (
-    <Layout>
-      <Routes />
-    </Layout>
-  );
+  //add app level logic here...
+  return <Routes />;
 }
 
 export default App;

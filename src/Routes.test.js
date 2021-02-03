@@ -7,7 +7,9 @@ test('Routes: load homepage for route: "/"', () => {
   const history = createMemoryHistory();
   history.push('/');
   render(<Routes history={history} />);
-  expect(screen.getByText(/Homepage/i)).toBeInTheDocument();
+  expect(
+    screen.getByText(/Welcome to the Parking Lot App!/i)
+  ).toBeInTheDocument();
 });
 
 test('Routes: load Dashboard for route: "/dashboard/:id"', () => {

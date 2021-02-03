@@ -1,0 +1,18 @@
+@import '../../vars.scss';
+
+.layout-container {
+  header {
+    background-color: $brand;
+    color: $header-text-color;
+    padding: 1rem 0;
+
+    .brand {
+      font-size: 3.5rem;
+      color: inherit;
+    }
+  }
+
+  .children-container {
+    padding-top: 5rem;
+  }
+}

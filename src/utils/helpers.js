@@ -1,8 +1,10 @@
+import { MAX_SLOTS } from './constants';
+
 export function isValidSlotCount(count) {
-  if (!/^[0-9]+$/.test(count)) {
+  if (!/^[\D]+$/.test(count)) {
     return false;
   }
 
   const intCount = parseInt(count);
-  return intCount > 0 && intCount <= 1000;
+  return intCount > 0 && intCount <= MAX_SLOTS;
 }
